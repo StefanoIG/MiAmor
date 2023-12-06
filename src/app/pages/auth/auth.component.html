@@ -1,0 +1,48 @@
+<div class="body">
+  <div class="login-card-container">
+    <div class="login-card">
+      <div class="login-card-logo">
+        <img src="../../../assets/img/logo.png" alt="logo" />
+      </div>
+      <div class="login-card-header">
+        <h1>Inicio de Sesión</h1>
+        <div>Porfavor inicia sesión para usar la plataforma</div>
+      </div>
+      <form
+        (submit)="login()"
+        #loginForm="ngForm"
+        id="loginForm"
+        class="login-card-form"
+      >
+        <div class="form-item">
+          <span class="form-item-icon material-symbols-rounded">mail</span>
+          <input
+            type="text"
+            placeholder="Correo electrónico"
+            id="email"
+            name="email"
+            [(ngModel)]="user.email"
+            autofocus
+          />
+        </div>
+        <div class="form-item">
+          <span class="form-item-icon material-symbols-rounded">lock</span>
+          <input
+            type="password"
+            placeholder="Contraseña"
+            id="password"
+            name="password"
+            [(ngModel)]="user.password"
+          />
+        </div>
+        <div class="form-item-other">
+          <div class="checkbox">
+            <input type="checkbox" id="rememberMeCheckbox" checked />
+            <label for="rememberMeCheckbox">Recordarme</label>
+          </div>
+        </div>
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+  </div>
+</div>

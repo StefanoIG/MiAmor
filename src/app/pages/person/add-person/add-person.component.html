@@ -1,0 +1,101 @@
+<div class="body">
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col">
+        <div class="h3 fw-bold text-danger">Agregar Persona</div>
+        <p class="fst-italic">Agrega una nueva persona para seguimiento</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <form [formGroup]="patientForm" (ngSubmit)="onSubmit()">
+          <div class="mb-2">
+            <input
+              formControlName="nombre"
+              type="text"
+              class="form-control"
+              placeholder="Nombre y Apellido"
+            />
+          </div>
+          <div class="mb-2">
+            <input
+            formControlName="foto"
+              name="foto"
+              type="text"
+              class="form-control"
+              placeholder="URL de Foto"
+            />
+          </div>
+          <div class="mb-2">
+            <input
+            formControlName="email"
+              name="email"
+              type="email"
+              class="form-control"
+              placeholder="Email"
+            />
+          </div>
+          <div class="mb-2">
+            <input
+            formControlName="mobile"
+              name="mobile"
+              type="tel"
+              class="form-control"
+              placeholder="Teléfono"
+            />
+          </div>
+          <div class="mb-2">
+            <input
+            formControlName="nacionalidad"
+              name="nacionalidad"
+              type="text"
+              class="form-control"
+              placeholder="Nacionalidad"
+            />
+          </div>
+          <div class="mb-2">
+            <input
+            formControlName="discapacidad"
+              name="discapacidad"
+              type="text"
+              class="form-control"
+              placeholder="Tipo de discapacidad"
+            />
+          </div>
+          <div class="mb-2">
+            <textarea
+            formControlName="historialMedico"
+              name="historialMedico"
+              class="form-control"
+              placeholder="Historial Médico"
+            ></textarea>
+          </div>
+          <div class="mb-2">
+            <input
+            formControlName="medicamentos"
+              name="medicamentos"
+              type="text"
+              class="form-control"
+              placeholder="Medicamentos recetados"
+            />
+          </div>
+          <div class="mb-2">
+            <input
+            formControlName="alergias"
+              name="alergias"
+              type="text"
+              class="form-control"
+              placeholder="Alergias"
+            />
+          </div>
+          <div class="mb-2">
+            <button type="submit" class="btn btn-success">Registrar</button>
+            <a routerLink="/panel" class="btn btn-secondary ms-2">Regresar</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

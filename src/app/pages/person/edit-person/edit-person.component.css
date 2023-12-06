@@ -1,0 +1,24 @@
+
+.body {
+  font-family: "Ubuntu", sans-serif !important;
+  background-color: #f5f4ff !important;
+  height: 100vh;
+  padding-top: 12px;
+}
+.tecnico-img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.agg-img {
+  width: 150px;
+}
+
+.tecnico-img-big {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.img-404 {
+  width: 200px;
+}

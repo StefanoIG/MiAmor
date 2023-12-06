@@ -1,0 +1,63 @@
+<div class="body">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <p class="h3 fw-bold">
+          CapaReg
+          <a class="btn btn-dark btn-sm" routerLink="/add-user">
+            <i class="fa fa-plus-circle"></i>
+            Nuevo Usuario
+          </a>
+          <a class="btn btn-dark btn-sm ms-3" routerLink="/panel">
+            <i class="fa fa-plus-circle"></i>
+            Pacientes
+          </a>
+        </p>
+        <p class="fst-italic">Usuarios registrados</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TARJETAS -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card list-group-item-danger shadow-lg my-2">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-sm-4">
+                <img alt="" class="tecnico-img" src="../../../../assets/img/contabilidade-para-psicologos.jpg" />
+              </div>
+              <div class="col-sm-7">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    Nombre: <span class="fw-bold">Luisa Sánchez</span>
+                  </li>
+                  <li class="list-group-item">
+                    Edad: <span class="fw-bold">25 años</span>
+                  </li>
+                  <li class="list-group-item">
+                    Teléfono: <span class="fw-bold">0981516113</span>
+                  </li>
+                  <li class="list-group-item">
+                    Nacionalidad: <span class="fw-bold">Ecuatoriana</span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-sm-1 d-flex flex-column justify-content-center align-items-center"
+              >
+                <button routerLink="/edit-user" class="btn btn-primary my-1">
+                  <i class="fa fa-pen"></i>
+                </button>
+                <button class="btn btn-danger my-1" (click)="delete()" id="eliminarPersona">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
